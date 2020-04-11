@@ -1,6 +1,6 @@
-#LDOCE5 Viewer (PyQt5)
+# LDOCE5 Viewer (PyQt5, Python3)
 
-This project is ported to PyQt5 which supports retina (HiDPI) display.  
+This project is ported to PyQt5 which supports retina (HiDPI) display.
 
 The LDOCE5 Viewer is an alternative dictionary viewer for the Longman Dictionary of Contemporary English 5th Edition (LDOCE 5).
 
@@ -11,3 +11,19 @@ It runs on Linux, Mac OS X and Microsoft Windows.
 This software is free and open source software licensed under the terms of GPLv3.
 
 
+## Requirement packages (in ubuntu)
+
+- `python3-pyqt5.qtwebkit`
+- `python3-pyqt5.qtmultimedia`
+- `libqt5multimedia5-plugins`
+- `python3-whoosh`
+- `python3-lxml`
+
+## Installation
+
+``` bash
+$ sudo apt install python3-pyqt5.qtwebkit python3-pyqt5.qtmultimedia libqt5multimedia5-plugins
+$ sudo apt install python3-whoosh python3-lxml
+$ make
+$ sudo make install
+```
