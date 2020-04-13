@@ -13,17 +13,19 @@ This software is free and open source software licensed under the terms of GPLv3
 
 ## Requirement packages (in ubuntu)
 
+- `pyqt5-dev-tools`
 - `python3-pyqt5.qtwebkit`
 - `python3-pyqt5.qtmultimedia`
 - `libqt5multimedia5-plugins`
 - `python3-whoosh`
 - `python3-lxml`
+- `python3-distutils`
 
 ## Installation
 
 ``` bash
-$ sudo apt install python3-pyqt5.qtwebkit python3-pyqt5.qtmultimedia libqt5multimedia5-plugins
-$ sudo apt install python3-whoosh python3-lxml
+$ sudo apt install pyqt5-dev-tools python3-pyqt5.qtwebkit python3-pyqt5.qtmultimedia libqt5multimedia5-plugins
+$ sudo apt install python3-whoosh python3-lxml python3-distutils
 $ make
 $ sudo make install
 ```
