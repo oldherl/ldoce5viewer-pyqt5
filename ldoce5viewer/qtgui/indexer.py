@@ -10,7 +10,11 @@ try:
     import cPickle as pickle
 except:
     import pickle
-from cgi import escape
+import sys
+if sys.version_info >= (3, 8):
+    from html import escape
+else:
+    from cgi import escape
 from struct import Struct
 import traceback
 

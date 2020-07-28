@@ -6,7 +6,12 @@ from __future__ import absolute_import
 from __future__ import unicode_literals
 
 import re
-from cgi import escape
+import sys
+if sys.version_info >= (3, 8):
+    from html import escape
+else:
+    from cgi import escape
+
 from itertools import chain
 
 import lxml.etree as et
