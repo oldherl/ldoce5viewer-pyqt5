@@ -85,10 +85,10 @@ class LineEdit(QLineEdit):
         rect = self.rect()
         self._buttonFind.move(
                 framewidth + 3 - 1,
-                (rect.height() - ICONSIZE) / 2 - 1)
+                int((rect.height() - ICONSIZE) / 2 - 1))
         self._buttonClear.move(
                 rect.width() - framewidth - 3 - ICONSIZE - 1,
-                (rect.height() - ICONSIZE) / 2 - 1)
+                int((rect.height() - ICONSIZE) / 2 - 1))
 
     def __onTextChanged(self, text):
         self._buttonClear.setVisible(bool(text))
@@ -149,7 +149,7 @@ class HtmlListWidget(QListWidget):
                 doc = self._doc
                 doc.setDefaultFont(option.font)
                 doc.setHtml('<body>MNmn012<span class="p">012</span></body>')
-                height = doc.size().height() + self.MARGIN_V * 2
+                height = int(doc.size().height() + self.MARGIN_V * 2)
                 s = self._item_size = QSize(0, height)
             return s
 
