@@ -8,7 +8,7 @@ PNG_16 := $(patsubst %-src.png, %-16.png, $(PNG_SRC))
 all: $(PNG_24) $(PNG_22) $(PNG_16)
 
 %-48-src.png: %.svg icongen.py
-	inkscape -w 96 -h 96 -e $@ $<
+	inkscape -w 96 -h 96 -o $@ $<
 
 edit-clear-48.png: edit-clear-48-src.png
 	cp $< $@
