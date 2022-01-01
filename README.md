@@ -2,30 +2,15 @@
 
 This project is ported to PyQt5 which supports retina (HiDPI) display.
 
-The LDOCE5 Viewer is an alternative dictionary viewer for the Longman Dictionary of Contemporary English 5th Edition (LDOCE 5).
+The LDOCE5 Viewer is an alternative dictionary viewer for the Longman Dictionary of Contemporary English 5th Edition (LDOCE 5). It was originally written by Taku Fukada and now forked by oldherl.
 
-Website: http://hakidame.net/ldoce5viewer/
-
-It runs on Linux, Mac OS X and Microsoft Windows.
+It use PyQt5 as the GUI toolkit, so it should run on Linux, macOS and Microsoft Windows. However, only Arch Linux is tested at the moment and I have no interest in supporting Windows and macOS.
 
 This software is free and open source software licensed under the terms of GPLv3.
 
 
-## Requirement packages (in ubuntu)
-
-- `pyqt5-dev-tools`
-- `python3-pyqt5.qtwebkit`
-- `python3-pyqt5.qtmultimedia`
-- `libqt5multimedia5-plugins`
-- `python3-whoosh`
-- `python3-lxml`
-- `python3-distutils`
-
 ## Installation
 
-``` bash
-$ sudo apt install pyqt5-dev-tools python3-pyqt5.qtwebkit python3-pyqt5.qtmultimedia libqt5multimedia5-plugins
-$ sudo apt install python3-whoosh python3-lxml python3-distutils
-$ make
-$ sudo make install
-```
+### on Arch Linux
+
+You can find a PKGBUILD at https://github.com/archlinuxcn/repo/blob/master/archlinuxcn/ldoce5viewer-oldherl-git/PKGBUILD which is also used to build a package in `archlinuxcn` third-party repo.

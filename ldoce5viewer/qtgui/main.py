@@ -53,7 +53,7 @@ _INCREMENTAL_LIMIT = 500
 _MAX_DELAY_UPDATE_INDEX = 100
 _INTERVAL_AUTO_PRON = 50
 _LOCAL_SCHEMES = frozenset(('dict', 'static', 'search', 'audio'))
-_HELP_PAGE_URL = "http://hakidame.net/ldoce5viewer/manual/"
+_HELP_PAGE_URL = "https://github.com/oldherl/ldoce5viewer-pyqt5"
 
 
 # Identifiers for lazy-loaded objects
